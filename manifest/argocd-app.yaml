@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: argocd-app-container
-        image: linkpond0629/app-with-argocd:de8b6c014f9f573bb7c10400a4fedce3cf96a6ce
+        image: linkpond0629/app-with-argocd:323e653db202a2948c779eee590f93ad630932d1
         ports:
           - protocol: TCP
             containerPort: 8080
