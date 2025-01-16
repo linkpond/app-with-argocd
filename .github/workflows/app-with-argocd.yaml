@@ -1,8 +1,8 @@
 name: App With Github Actions with ArgoCD
 
 on:
-  # workflow_dispatch
-  push
+  workflow_dispatch
+  # push
 
 jobs:
   ci:
@@ -61,7 +61,6 @@ jobs:
         context: .
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKERHUB_REPOSITORY }}:${{ github.sha }}
-
 
     - name: Set up Image
       run: |
